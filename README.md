@@ -55,4 +55,12 @@ Next I explored adding in a brightness adjustment. I did not actually use this t
 
 ![png](behavioral-cloning-submission/brightness_adjusted.png)
 
+### Building the Model
+Create NN Table
+
+
+![png](behavioral-cloning-submission/NN_loss.png)
+
+### Autonomous Driving 
+Link in Video
 

@@ -41,4 +41,18 @@ The dataset shows that most of the steering angles are close to zero, which indi
 Augmenting the dataset is a technique to increase the amount of data available to train the network. Since the provided images were limited and I could not collect any extra data due to a lack of a video game control, I decided to augment the images. 
 Below is an image from the center camera of the vehicle. 
 
-![png](behavioral-cloning-submission/Center Camera Image, steering 0.06.png)
+![png](behavioral-cloning-submission/center_camera_steering0.06.png)
+
+Next I can use the left and right camera images to simulate driving the effect of a car wandering off to the side, and recovering. I added an angle of 0.25 to the left camera and subtracted 0.25 from the right camera. This way I simulated that the left and right camera are actually in the center of the vehicle.
+
+![png](behavioral-cloning-submission/left_camera_steering0.31.png)
+
+Next I flipped the images horizontally. It is easy to see looking at the layout of the simulation track and the associated steering angles that the track is full of mostly left turns. To simulate right turns I flipped the image horizontally and inverted the steering angle.
+
+![png](behavioral-cloning-submission/flipped_image_steering-0.06.png)
+
+Next I explored adding in a brightness adjustment. I did not actually use this to train my model since I had enough data after training with the previous augmented data to autonomously navigate the track. Here is a sample below of what a brightness augmented image would look like to simulate driving in different lighting conditions.
+
+![png](behavioral-cloning-submission/brightness_adjusted.png)
+
+

@@ -35,7 +35,7 @@ Lets also look at a corrolated set of images from the left, center, and right ca
 #### Metadata
 The dataset shows that most of the steering angles are close to zero, which indicates mostely straight driving. 
 
-![png](behavioral-cloning-submission/NN_loss.png)
+![png](behavioral-cloning-submission/steering_angles_hist.png)
 
 #### Augmentation Techniques
 Augmenting the dataset is a technique to increase the amount of data available to train the network. Since the provided images were limited and I could not collect any extra data due to a lack of a video game control, I decided to augment the images. 

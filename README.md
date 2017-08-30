@@ -16,4 +16,13 @@ Udacity provided a training simulator that collects images from 3 cameras mounte
 ![png](behavioral-cloning-submission/simulator_home.jpg)
 ![png](behavioral-cloning-submission/simulator_track1.jpg)
   
-### Data Set Summary & Exploration
+### Data Set Summary & and Preparation
+First lets look at a subset of randomly selected data from the center camera as shown below.
+
+![png](behavioral-cloning-submission/example_dataset.png)
+
+It is easy to see that there are many pixels in the image that will not provide any useful information to the NN, such as the hood of the car or anything above the horizon line. 
+
+![png](behavioral-cloning-submission/cropped_dataset.png)
+
+Cropping off the bottom 20 pixels and the top 50 pixels show that this is a much more useful image. This will also cuts down on the amount of pixels to process in each image. 

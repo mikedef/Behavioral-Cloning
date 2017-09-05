@@ -90,4 +90,5 @@ I implemented a generator to help with memory problems and to speed up training,
 
 Below is a video of my learned behavioral driving. 
 
-![mp4](video.mp4)
+![mp4](https://youtu.be/VATPtwUTwmI)
+

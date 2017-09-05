@@ -82,9 +82,12 @@ After going through the project lessons and working though the problems, I focus
 |						|												|
 |						|												|
 
+I implemented a generator to help with memory problems and to speed up training, but I could not get the network to properly train and exicute on the track. I ended up using only 2 epochs of training and Dropout to reduce overfitting and get a model that worked on the track. 
 
 ![png](behavioral-cloning-submission/NN_loss.png)
 
 ### Autonomous Driving 
-Link in Video
 
+Below is a video of my learned behavioral driving. 
+
+![mp4](video.mp4)

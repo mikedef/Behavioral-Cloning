@@ -56,7 +56,31 @@ Next I explored adding in a brightness adjustment. I did not actually use this t
 ![png](behavioral-cloning-submission/brightness_adjusted.png)
 
 ### Building the Model
-Create NN Table
+
+After going through the project lessons and working though the problems, I focused on building the NVIDIA model architecture. I based this off of reading that NVIDIA used this in the real world, as well as recomendations in the classroom. 
+
+| Layer         		|     Description	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Input         		| 160x320x3 RGB Image				| 
+| Cropping          | output 90x320x3        |
+| Convolution 5x5     	| 2x2 stride, valid padding, output 43x158x24 	|
+| ELU					| Activation									|
+| Convolution 5x5	    | 2x2 stride, valid padding, outputs 20x77x36	|
+| ELU					| Activation									|
+| Covolution 5x5	| 2x2 stride, valid padding, outputs 8x37x48       				|
+| ELU					| Activation									|
+| Convolution 5x5	    | 2x2 stride, valid padding, outputs 6x37x48	|
+| ELU					| Activation									|
+| Covolution 5x5	| 2x2 stride, valid padding, outputs 4x33x64       				|
+| ELU					| Activation									|
+| Dropout				| keep_prob = 0.5 								|
+| Flatten		|  |
+| Dense     | Input = 8848. Output = 100       				|
+| Dense     | Input = 100. Output = 50       				|
+| Dense     | Input = 50. Output = 10       				|
+| Dense     | Input = 10. Output = 1       				|
+|						|												|
+|						|												|
 
 
 ![png](behavioral-cloning-submission/NN_loss.png)
